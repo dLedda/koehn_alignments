@@ -6,7 +6,7 @@ Visualisation of the results of the alignment algorithm in Philipp Koehn's SMT b
 Put the alignments, tokenised e sentences, and tokenised f sentences into the files align, e, and f, respectively (or choose your own names and enter these into the command line.)
 There are examples of the format required included.
 
-By default, each sentence is read, the alignment is printed to console on a grid, and each 
+By default, each sentence is read, the alignment is printed to console on a grid, and each phrase is printed onto a grid with the alignment displayed with dots in each cell, then the phrase is printed as text below. 
 
 ```
 usage: alignments.py [-h] [-r RENDER_TYPE] [-s] [-e E_FILE] [-f F_FILE] [-a ALIGN_FILE]
