@@ -67,7 +67,7 @@ def main():
     for e_sent, f_sent, alignment in load_alignments(args.e_file, args.f_file, args.align_file):
         if not args.hide_alignment:
             print_word_grid(f_sent, e_sent, alignment)
-            input("Press any key...")
+            input("Press enter to continue...")
         phrase_pairs = find_all_phrase_pairs_in_alignment(alignment, len(e_sent), len(f_sent))
         render_phrase_pairs(
             phrase_pairs,
@@ -168,7 +168,7 @@ def render_phrase_pairs(phrase_pairs: OrderedDict, e_sentence: List[str], f_sent
             print("E: ", *[e_sentence[i] for i in range(e_span[0], e_span[1] + 1)])
             print("F: ", *[f_sentence[i] for i in range(f_span[0], f_span[1] + 1)])
             print()
-        input("Press any key...")
+        input("Press enter to continue...")
 
 
 def list_cells_in_phrase_pair(phrase_pair: PhrasePair) -> List[Tuple[int, int]]:
